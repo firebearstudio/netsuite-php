@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -40,6 +40,7 @@ class VendorBill extends Record {
     public $billingAddress;
     public $exchangeRate;
     public $entityTaxRegNum;
+    public $taxPointDate;
     public $terms;
     public $dueDate;
     public $discountDate;
@@ -63,9 +64,11 @@ class VendorBill extends Record {
     public $expenseList;
     public $accountingBookDetailList;
     public $itemList;
+    public $installmentList;
     public $landedCostsList;
     public $purchaseOrderList;
     public $taxDetailsList;
+    public $overrideInstallments;
     public $customFieldList;
     public $internalId;
     public $externalId;
@@ -90,6 +93,7 @@ class VendorBill extends Record {
         "billingAddress" => "Address",
         "exchangeRate" => "float",
         "entityTaxRegNum" => "RecordRef",
+        "taxPointDate" => "dateTime",
         "terms" => "RecordRef",
         "dueDate" => "dateTime",
         "discountDate" => "dateTime",
@@ -113,9 +117,11 @@ class VendorBill extends Record {
         "expenseList" => "VendorBillExpenseList",
         "accountingBookDetailList" => "AccountingBookDetailList",
         "itemList" => "VendorBillItemList",
+        "installmentList" => "VendorBillInstallmentList",
         "landedCostsList" => "PurchLandedCostList",
         "purchaseOrderList" => "RecordRefList",
         "taxDetailsList" => "TaxDetailsList",
+        "overrideInstallments" => "boolean",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",

@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -32,6 +32,10 @@ class InboundShipmentItems {
     public $unit;
     public $poRate;
     public $expectedRate;
+    public $shipmentItemExchangeRate;
+    public $shipmentItemEffectiveDate;
+    public $unitLandedCost;
+    public $totalUnitCost;
     public $shipmentItemAmount;
     public $poCurrency;
     public $incoterm;
@@ -48,6 +52,10 @@ class InboundShipmentItems {
         "unit" => "RecordRef",
         "poRate" => "float",
         "expectedRate" => "float",
+        "shipmentItemExchangeRate" => "float",
+        "shipmentItemEffectiveDate" => "dateTime",
+        "unitLandedCost" => "float",
+        "totalUnitCost" => "float",
         "shipmentItemAmount" => "float",
         "poCurrency" => "RecordRef",
         "incoterm" => "RecordRef",

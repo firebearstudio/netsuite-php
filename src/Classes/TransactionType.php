@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -31,6 +31,8 @@ class TransactionType {
     const _check = "_check";
     const _creditMemo = "_creditMemo";
     const _custom = "_custom";
+    const _customPurchase = "_customPurchase";
+    const _customSale = "_customSale";
     const _customerDeposit = "_customerDeposit";
     const _customerPayment = "_customerPayment";
     const _customerRefund = "_customerRefund";
@@ -49,6 +51,7 @@ class TransactionType {
     const _opportunity = "_opportunity";
     const _paycheck = "_paycheck";
     const _paycheckJournal = "_paycheckJournal";
+    const _periodEndJournal = "_periodEndJournal";
     const _purchaseOrder = "_purchaseOrder";
     const _requisition = "_requisition";
     const _returnAuthorization = "_returnAuthorization";

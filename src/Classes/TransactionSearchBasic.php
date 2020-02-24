@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -218,6 +218,7 @@ class TransactionSearchBasic extends SearchRecordBasic {
     public $netAmount;
     public $nextApprover;
     public $nextBillDate;
+    public $nexus;
     public $noAutoAssignLocation;
     public $nonReimbursable;
     public $number;
@@ -227,6 +228,7 @@ class TransactionSearchBasic extends SearchRecordBasic {
     public $otherRefNum;
     public $otherRefNumNonDeposit;
     public $overheadParentItem;
+    public $overrideInstallments;
     public $packageCount;
     public $paidTransaction;
     public $parent;
@@ -244,6 +246,7 @@ class TransactionSearchBasic extends SearchRecordBasic {
     public $paymentEventType;
     public $paymentHold;
     public $paymentMethod;
+    public $paymentOption;
     public $payPalPending;
     public $payPalStatus;
     public $payPalTranId;
@@ -318,12 +321,14 @@ class TransactionSearchBasic extends SearchRecordBasic {
     public $statistical;
     public $status;
     public $subscription;
+    public $subsidiaryTaxRegNum;
     public $subscriptionLine;
     public $subsidiary;
     public $taxItem;
     public $taxLine;
     public $taxPeriod;
     public $taxPeriodRelative;
+    public $taxPointDate;
     public $taxRate;
     public $terms;
     public $termsOfSale;
@@ -563,6 +568,7 @@ class TransactionSearchBasic extends SearchRecordBasic {
         "netAmount" => "SearchDoubleField",
         "nextApprover" => "SearchMultiSelectField",
         "nextBillDate" => "SearchDateField",
+        "nexus" => "SearchMultiSelectField",
         "noAutoAssignLocation" => "SearchBooleanField",
         "nonReimbursable" => "SearchBooleanField",
         "number" => "SearchLongField",
@@ -572,6 +578,7 @@ class TransactionSearchBasic extends SearchRecordBasic {
         "otherRefNum" => "SearchTextNumberField",
         "otherRefNumNonDeposit" => "SearchTextNumberField",
         "overheadParentItem" => "SearchMultiSelectField",
+        "overrideInstallments" => "SearchBooleanField",
         "packageCount" => "SearchLongField",
         "paidTransaction" => "SearchMultiSelectField",
         "parent" => "SearchLongField",
@@ -589,6 +596,7 @@ class TransactionSearchBasic extends SearchRecordBasic {
         "paymentEventType" => "SearchEnumMultiSelectField",
         "paymentHold" => "SearchBooleanField",
         "paymentMethod" => "SearchMultiSelectField",
+        "paymentOption" => "SearchStringField",
         "payPalPending" => "SearchBooleanField",
         "payPalStatus" => "SearchStringField",
         "payPalTranId" => "SearchStringField",
@@ -663,12 +671,14 @@ class TransactionSearchBasic extends SearchRecordBasic {
         "statistical" => "SearchBooleanField",
         "status" => "SearchEnumMultiSelectField",
         "subscription" => "SearchMultiSelectField",
+        "subsidiaryTaxRegNum" => "SearchMultiSelectField",
         "subscriptionLine" => "SearchMultiSelectField",
         "subsidiary" => "SearchMultiSelectField",
         "taxItem" => "SearchMultiSelectField",
         "taxLine" => "SearchBooleanField",
         "taxPeriod" => "RecordRef",
         "taxPeriodRelative" => "PostingPeriodDate",
+        "taxPointDate" => "SearchDateField",
         "taxRate" => "SearchDoubleField",
         "terms" => "SearchMultiSelectField",
         "termsOfSale" => "SearchEnumMultiSelectField",

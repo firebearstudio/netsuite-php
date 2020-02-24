@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -26,6 +26,7 @@ class TransactionLinkType {
     const _advancedExpenseAmortization = "_advancedExpenseAmortization";
     const _authorizationDeposit = "_authorizationDeposit";
     const _blcgaJeFullfillment = "_blcgaJeFullfillment";
+    const _captureAuthorization = "_captureAuthorization";
     const _closedPeriodFxVariance = "_closedPeriodFxVariance";
     const _closeWorkOrder = "_closeWorkOrder";
     const _cogsLink = "_cogsLink";
@@ -45,6 +46,7 @@ class TransactionLinkType {
     const _intercompanyAdjustment = "_intercompanyAdjustment";
     const _inTransitPayment = "_inTransitPayment";
     const _inventoryCountAdjustment = "_inventoryCountAdjustment";
+    const _kitShipment = "_kitShipment";
     const _landedCost = "_landedCost";
     const _linkedReturnCost = "_linkedReturnCost";
     const _opportunityClose = "_opportunityClose";
@@ -57,7 +59,9 @@ class TransactionLinkType {
     const _paymentRefund = "_paymentRefund";
     const _payTegata = "_payTegata";
     const _poToOwnershipTransfer = "_poToOwnershipTransfer";
+    const _prepaymentApplication = "_prepaymentApplication";
     const _purchaseContractOrder = "_purchaseContractOrder";
+    const _purchaseOrderPrepayment = "_purchaseOrderPrepayment";
     const _purchaseOrderRequisition = "_purchaseOrderRequisition";
     const _purchaseOrderToBlanket = "_purchaseOrderToBlanket";
     const _purchaseReturn = "_purchaseReturn";
@@ -80,6 +84,8 @@ class TransactionLinkType {
     const _transferOrderFulfillmentReceipt = "_transferOrderFulfillmentReceipt";
     const _vendorBillVariance = "_vendorBillVariance";
     const _vendorRfqToPurchaseContract = "_vendorRfqToPurchaseContract";
+    const _waveOrder = "_waveOrder";
+    const _waveShipment = "_waveShipment";
     const _wipBuild = "_wipBuild";
     const _workOrderBuild = "_workOrderBuild";
 }

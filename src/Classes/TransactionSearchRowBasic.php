@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -220,6 +220,7 @@ class TransactionSearchRowBasic extends SearchRowBasic {
     public $netAmountNoTax;
     public $nextApprover;
     public $nextBillDate;
+    public $nexus;
     public $noAutoAssignLocation;
     public $nonReimbursable;
     public $oneTimeTotal;
@@ -229,6 +230,7 @@ class TransactionSearchRowBasic extends SearchRowBasic {
     public $originator;
     public $otherRefNum;
     public $overheadParentItem;
+    public $overrideInstallments;
     public $packageCount;
     public $paidAmount;
     public $paidTransaction;
@@ -247,6 +249,7 @@ class TransactionSearchRowBasic extends SearchRowBasic {
     public $paymentEventType;
     public $paymentHold;
     public $paymentMethod;
+    public $paymentOption;
     public $payPalPending;
     public $payPalStatus;
     public $payPalTranId;
@@ -328,10 +331,12 @@ class TransactionSearchRowBasic extends SearchRowBasic {
     public $subscription;
     public $subscriptionLine;
     public $subsidiary;
+    public $subsidiaryTaxRegNum;
     public $taxAmount;
     public $taxCode;
     public $taxLine;
     public $taxPeriod;
+    public $taxPointDate;
     public $taxTotal;
     public $termInMonths;
     public $terms;
@@ -572,6 +577,7 @@ class TransactionSearchRowBasic extends SearchRowBasic {
         "netAmountNoTax" => "SearchColumnDoubleField[]",
         "nextApprover" => "SearchColumnSelectField[]",
         "nextBillDate" => "SearchColumnDateField[]",
+        "nexus" => "SearchColumnSelectField[]",
         "noAutoAssignLocation" => "SearchColumnBooleanField[]",
         "nonReimbursable" => "SearchColumnBooleanField[]",
         "oneTimeTotal" => "SearchColumnDoubleField[]",
@@ -581,6 +587,7 @@ class TransactionSearchRowBasic extends SearchRowBasic {
         "originator" => "SearchColumnEnumSelectField[]",
         "otherRefNum" => "SearchColumnTextNumberField[]",
         "overheadParentItem" => "SearchColumnSelectField[]",
+        "overrideInstallments" => "SearchColumnBooleanField[]",
         "packageCount" => "SearchColumnLongField[]",
         "paidAmount" => "SearchColumnDoubleField[]",
         "paidTransaction" => "SearchColumnSelectField[]",
@@ -599,6 +606,7 @@ class TransactionSearchRowBasic extends SearchRowBasic {
         "paymentEventType" => "SearchColumnEnumSelectField[]",
         "paymentHold" => "SearchColumnBooleanField[]",
         "paymentMethod" => "SearchColumnSelectField[]",
+        "paymentOption" => "SearchColumnSelectField[]",
         "payPalPending" => "SearchColumnBooleanField[]",
         "payPalStatus" => "SearchColumnStringField[]",
         "payPalTranId" => "SearchColumnStringField[]",
@@ -680,10 +688,12 @@ class TransactionSearchRowBasic extends SearchRowBasic {
         "subscription" => "SearchColumnSelectField[]",
         "subscriptionLine" => "SearchColumnSelectField[]",
         "subsidiary" => "SearchColumnSelectField[]",
+        "subsidiaryTaxRegNum" => "SearchColumnStringField[]",
         "taxAmount" => "SearchColumnDoubleField[]",
         "taxCode" => "SearchColumnSelectField[]",
         "taxLine" => "SearchColumnBooleanField[]",
         "taxPeriod" => "SearchColumnSelectField[]",
+        "taxPointDate" => "SearchColumnDateField[]",
         "taxTotal" => "SearchColumnDoubleField[]",
         "termInMonths" => "SearchColumnLongField[]",
         "terms" => "SearchColumnSelectField[]",

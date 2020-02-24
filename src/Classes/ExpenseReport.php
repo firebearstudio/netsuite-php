@@ -14,7 +14,7 @@
  * @license    https://raw.githubusercontent.com/ryanwinchester/netsuite-php/master/original/NetSuite%20Application%20Developer%20License%20Agreement.txt
  * @link       http://www.netsuite.com/portal/developers/resources/suitetalk-sample-applications.shtml
  *
- * generated:  2019-02-27 03:26:43 PM PST
+ * generated:  2020-02-19 09:58:55 AM CST
  */
 
 namespace NetSuite\Classes;
@@ -26,7 +26,10 @@ class ExpenseReport extends Record {
     public $customForm;
     public $account;
     public $entity;
+    public $expenseReportCurrency;
+    public $expenseReportExchangeRate;
     public $subsidiary;
+    public $taxPointDate;
     public $tranId;
     public $acctCorpCardExp;
     public $postingPeriod;
@@ -49,6 +52,9 @@ class ExpenseReport extends Record {
     public $location;
     public $expenseList;
     public $accountingBookDetailList;
+    public $taxDetailsList;
+    public $nexus;
+    public $subsidiaryTaxRegNum;
     public $customFieldList;
     public $internalId;
     public $externalId;
@@ -59,7 +65,10 @@ class ExpenseReport extends Record {
         "customForm" => "RecordRef",
         "account" => "RecordRef",
         "entity" => "RecordRef",
+        "expenseReportCurrency" => "RecordRef",
+        "expenseReportExchangeRate" => "float",
         "subsidiary" => "RecordRef",
+        "taxPointDate" => "dateTime",
         "tranId" => "string",
         "acctCorpCardExp" => "RecordRef",
         "postingPeriod" => "RecordRef",
@@ -82,6 +91,9 @@ class ExpenseReport extends Record {
         "location" => "RecordRef",
         "expenseList" => "ExpenseReportExpenseList",
         "accountingBookDetailList" => "AccountingBookDetailList",
+        "taxDetailsList" => "TaxDetailsList",
+        "nexus" => "RecordRef",
+        "subsidiaryTaxRegNum" => "RecordRef",
         "customFieldList" => "CustomFieldList",
         "internalId" => "string",
         "externalId" => "string",
